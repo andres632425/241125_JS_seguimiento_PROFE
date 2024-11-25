@@ -27,7 +27,7 @@
       </header>
       <div class="content">
         <main>
-          <button id="btn1" class="dia_boton" onclick="apariencia()" >Noche</button>
+          <button id="btn1" class="dia_boton" onclick="apariencia(event)" >Noche</button>
         </main>
         <aside>
           <form action="cliente.html" method="get">
@@ -98,9 +98,17 @@
                    */
 
               //Modelo B
-               function apariencia(){
+               function apariencia(event){
 
-              const botonApariencia=document.getElementById("btn1");
+               console.log(event);// El objeto event, recoge los datos del evento y los muestra en console.log
+
+              let idBoton= event.target.id;
+              let nombreBoton=event.target.nodeName;
+
+              alert(idBoton+"  "+nombreBoton);
+
+
+              const botonApariencia=document.getElementById(idBoton);
               const cuerpoPagina=document.querySelector("body");
               const contenedor=document.querySelector(".contenedor");
 
