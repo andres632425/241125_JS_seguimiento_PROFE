@@ -27,7 +27,7 @@
       </header>
       <div class="content">
         <main>
-          <button id="btn1">NOCHE</button>
+          <button id="btn1" onclick="apariencia()" >NOCHE</button>
         </main>
         <aside>
           <form action="cliente.html" method="get">
@@ -75,8 +75,25 @@
             -Funciones
             -Metodos acceso CSS
            
-           
            */
+              function apariencia(){
+
+                      // alert("Dia y noche");
+              
+              const botonApariencia=document.getElementById("btn1");
+              const cuerpoPagina=document.querySelector("body");
+              const contenedor=document.querySelector(".contenedor");
+              
+              cuerpoPagina.style.backgroundColor="black";
+              contenedor.style.opacity="0.4";
+              botonApariencia.style.color="white";
+              
+              botonApariencia.style.opacity="1";
+              botonApariencia.innerText="Dia"
+
+              }
+              
+
     </script>
   </body>
 </html>
