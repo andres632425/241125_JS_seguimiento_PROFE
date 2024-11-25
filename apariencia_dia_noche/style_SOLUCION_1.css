@@ -15,6 +15,8 @@
         color: rgb(50, 49, 49);
       }
 
+      .noche_body {background-color: black;}
+
       /* Pagina codigo   */
       nav {
         width: 100%;
@@ -39,7 +41,7 @@
         background-color: rgb(149, 138, 75);
         margin: 0 auto;
       }
-
+      .noche_contenedor {opacity: 0.4;}
       nav ul {
         /*border: 0.2rem solid red; */
         min-height: 15rem;
@@ -86,8 +88,14 @@
         width: 7rem;
         height: 4rem;
         margin-top: 2rem;
-        background-color: blueviolet;
+       
       }
+        
+        .dia_boton { background-color: blueviolet;}
+
+        .noche_boton {background-color: chartreuse;}
+
+
 
       aside {
         width: 60%;
