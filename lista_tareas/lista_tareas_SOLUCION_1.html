@@ -26,10 +26,11 @@
           <button id="btn2"> + </button>
         </div>
         <section class="tareas">
-          <ul>
+          <ul> <!--  
             <li>Comprar dos tajadas de salmon</li>
             <li>Hacer pisto con tomate</li>
             <li>Hacer lavadora de color</li>
+            -->
           </ul>
         </section>
       </header>
@@ -125,7 +126,7 @@
                 //alert("Script cargado");
             
  
-           const listaTareas= ["Comprar dos tajaadas de salmon","Hacer piisto con tomate","Hacer laavadora de color"];
+           const listaTareas= ["Comprar dos tajadas de salmon","Hacer pisto con tomate","Hacer lavadora de color"];
            const cajaListaTareas=document.querySelector(".tareas ul");
 
              let result="";
@@ -135,6 +136,8 @@
                  result +="<li>"+ listaTareas[indice]+"</li>";
               
             }
+            //<span>"+indice+"</span>
+            // Lo añadimos a la variable de salida para visualizar el indice
             cajaListaTareas.innerHTML=result;
 
            }
