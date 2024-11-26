@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
-    <style>
-      /* Reset codigo   */
-      body {
+     /* Reset codigo   */
+     body {
         margin: 0rem;
         padding: 0rem;
       }
@@ -151,62 +143,3 @@
         min-height: 8rem;
         background-color: rgb(35, 33, 31);
       }
-    </style>
-  </head>
-  <body>
-    <div class="contenedor">
-      <nav>
-        <ul>
-          <li>Inicio</li>
-          <li>Productos</li>
-          <li>Contacto</li>
-        </ul>
-      </nav>
-      <header>
-        <h1>Lista de Tareas</h1>
-        <div>
-          <input id="inpt1" class="entradaTareas" type="text" value="Limpiar el coche"/>
-          <button id="btn2"> + </button>
-        </div>
-        <section class="tareas">
-          <ul>
-            <li>Comprar dos tajadas de salmon</li>
-            <li>Hacer pisto con tomate</li>
-            <li>Hacer lavadora de color</li>
-          </ul>
-        </section>
-      </header>
-      <div class="content">
-        <main>
-          <button id="btn1">NOCHE</button>
-        </main>
-        <aside>
-          <form action="cliente.html" method="get">
-            <legend>Logueo-Registro</legend>
-            <p></p>
-
-            <input type="text" name="nombre" /> Nombre
-            <p></p>
-
-            <input type="text" name="apellido" /> Apellido
-            <p></p>
-
-            <input type="password" /> Contraseña
-            <p></p>
-            <input type="text" name="edad" /> Edad
-            <p></p>
-
-            <button type="submit">ENVIAR</button>
-          </form>
-        </aside>
-      </div>
-
-      <footer></footer>
-    </div>
-
-    <script>
-
-      
-    </script>
-  </body>
-</html>
