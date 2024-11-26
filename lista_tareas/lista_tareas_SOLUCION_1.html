@@ -101,7 +101,7 @@
 
 */
        // Modelo A
-
+      /*
        const botonAnadir=document.getElementById("btn2");
        const cajaListaTareas=document.querySelector(".tareas ul");
 
@@ -116,12 +116,36 @@
           let resultadoNuevaTarea="<li>"+nuevaTarea+"</li>";
           cajaListaTareas.innerHTML+=resultadoNuevaTarea;
 
-
-
        }
+   */
+      //Modelo B
+             document.body.onload=function(){
 
 
-      
+                //alert("Script cargado");
+            
+ 
+           const listaTareas= ["Comprar dos tajaadas de salmon","Hacer piisto con tomate","Hacer laavadora de color"];
+           const cajaListaTareas=document.querySelector(".tareas ul");
+
+             let result="";
+
+           for (let indice in listaTareas) {
+     
+                 result +="<li>"+ listaTareas[indice]+"</li>";
+              
+            }
+            cajaListaTareas.innerHTML=result;
+
+           }
+          
+          
+          
+          
+
+
+
+
     </script>
   </body>
 </html>
